@@ -1,12 +1,12 @@
 {
   "name": "key-manager",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.1",
   "main": "./bin/bundle.js",
   "author": {
-    "name": "your name",
-    "email": "your@email.com"
+    "name": "ouyang-chao",
+    "email": "chao@ouyang.io"
   },
-  "license": "WTFPL",
+  "license": "Anti-996",
   "repository": "https://github.com/your/package/address",
   "keywords": [],
   "description": "a npm package",
