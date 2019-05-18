@@ -1,5 +1,6 @@
 import React from 'react';
 import produce from 'immer';
+import k from 'key-manager';
 import { hot } from 'react-hot-loader';
 
 import Item from '../Item';
@@ -71,7 +72,7 @@ class List extends React.Component {
         <ul>
           {list.map((item, idx) => (
             <Item.view
-              key={idx}
+              key={k(item)}
               title={item.title}
               remove={() => this.handleRemoveItem(idx)}
             />
