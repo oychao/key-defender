@@ -1,5 +1,5 @@
 {
-  "name": "npm-demo",
+  "name": "key-manager",
   "version": "1.0.0",
   "main": "./bin/bundle.js",
   "author": {
