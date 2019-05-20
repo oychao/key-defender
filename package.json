@@ -1,5 +1,5 @@
 {
-  "name": "key-manager",
+  "name": "key-defender",
   "version": "1.0.0-alpha.1",
   "main": "./bin/bundle.js",
   "author": {
@@ -8,7 +8,11 @@
   },
   "license": "Anti-996",
   "repository": "https://github.com/your/package/address",
-  "keywords": [ "key", "list", "key-manager" ],
+  "keywords": [
+    "key",
+    "list",
+    "key-defender"
+  ],
   "description": "Manage keys in React/Vue applications.",
   "files": [
     "LICENSE.md",

@@ -1,4 +1,4 @@
-# key-manager
+# key-defender
 
 [![Build Status](https://travis-ci.org/oychao/key-manage.svg?branch=master)](https://travis-ci.org/oychao/key-manage) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
@@ -13,12 +13,12 @@ What if we manage all keys somewhere else, like in a Map which uses list item (i
 ## How to use
 
 ```bash
-npm install --save key-manager
+npm install --save key-defender
 ```
 
 ```jsx
 // some React Component
-import k from 'key-manager';
+import k from 'key-defender';
 
 // ...
 <ul>
@@ -37,14 +37,14 @@ Here is an [demo project][2].
 
 ## Caveats
 
-You should always use an object as a parameter in key-manager, for only objects are unique regardless of their values are equal, so we can tell a difference in a Map.
+You should always use an object as a parameter in key-defender, for only objects are unique regardless of their values are equal, so we can tell a difference in a Map.
 
 ```javascript
 'abcd' === 'abcd' // true
 { title: 'abcd' } === { title: 'abcd' } // false
 ```
 
-If you are handling a list with basic typed values, decorate it before using key-manager.
+If you are handling a list with basic typed values, decorate it before using key-defender.
 
 ```javascript
 ['foo', 'foo', 'bar', 'bar'] // origin list
@@ -56,4 +56,4 @@ If you are handling a list with basic typed values, decorate it before using key
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 [1]: https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318
-[2]: https://github.com/oychao/key-manager/tree/master/demo
+[2]: https://github.com/oychao/key-defender/tree/master/demo

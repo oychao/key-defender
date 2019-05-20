@@ -1,6 +1,6 @@
 import React from 'react';
 import produce from 'immer';
-import k from 'key-manager';
+import k from 'key-defender';
 import { hot } from 'react-hot-loader';
 
 import Item from '../Item';
