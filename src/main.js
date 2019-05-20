@@ -5,7 +5,7 @@ const store = new WeakMap();
 
 export default function (item, keyLen = 10) {
   if (typeof item !== 'object') {
-    throw new Error(`item of list should be an object while a ${typeof item} is given`);
+    throw new TypeError(`item of list should be an object rather than a ${typeof item}`);
   }
   if (store.has(item)) {
     return store.get(item);
@@ -14,7 +14,7 @@ export default function (item, keyLen = 10) {
   const legalLen = keyLen < 10 ? 10 : keyLen;
   let i;
   for (i = 0; i < legalLen; i += 1) {
-    ret.push(Math.floor(Math.random() * DICT_LEN));
+    ret.push(DICT[Math.floor(Math.random() * DICT_LEN)]);
   }
   const str = ret.join('');
   store.set(item, str);
