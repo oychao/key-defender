@@ -1,6 +1,6 @@
 # key-defender
 
-[![Build Status](https://travis-ci.org/oychao/key-manage.svg?branch=master)](https://travis-ci.org/oychao/key-manage) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
+[![Build Status](https://travis-ci.org/oychao/key-defender.svg?branch=master)](https://travis-ci.org/oychao/key-defender) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu)
 
 ## What and Why and How it works
 
