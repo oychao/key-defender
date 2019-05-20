@@ -8,8 +8,8 @@
   },
   "license": "Anti-996",
   "repository": "https://github.com/your/package/address",
-  "keywords": [],
-  "description": "a npm package",
+  "keywords": [ "key", "list", "key-manager" ],
+  "description": "Manage keys in React/Vue applications.",
   "files": [
     "LICENSE.md",
     "README.md",

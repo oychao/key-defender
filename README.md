@@ -8,7 +8,7 @@ In React and Vue applications when you don't have stable IDs for list items, you
 
 It is recommended to use an ID or email or something unique as a key for each item, but sometimes, we just don't have it. Of course we can generate some unique IDs, meanwhile your data schema will be changed.
 
-What if we manage all keys somewhere else, like in a Weak Map which uses list item (i.e. an object) as a key?
+What if we manage all keys somewhere else, like in a Map which uses list item (i.e. an object) as a key?
 
 ## How to use
 
@@ -34,6 +34,22 @@ import k from 'key-manager';
 ```
 
 Here is an [demo project][2].
+
+## Caveats
+
+You should always use an object as a parameter in key-manager, for only objects are unique regardless of their values are equal, so we can tell a difference in a Map.
+
+```javascript
+'abcd' === 'abcd' // true
+{ title: 'abcd' } === { title: 'abcd' } // false
+```
+
+If you are handling a list with basic typed values, decorate it before using key-manager.
+
+```javascript
+['foo', 'foo', 'bar', 'bar'] // origin list
+['foo', 'foo', 'bar', 'bar'].map(_ => ({ val: _ })) // decorated list
+```
 
 ## License
 
