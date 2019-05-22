@@ -1,13 +1,13 @@
 {
   "name": "key-defender",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "main": "./bin/bundle.js",
   "author": {
     "name": "ouyang-chao",
     "email": "chao@ouyang.io"
   },
   "license": "Anti-996",
-  "repository": "https://github.com/your/package/address",
+  "repository": "https://github.com/oychao/key-defender",
   "keywords": [
     "key",
     "list",

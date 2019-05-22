@@ -22,13 +22,7 @@ import k from 'key-defender';
 
 // ...
 <ul>
-  {list.map((item, idx) => (
-    <Item.view
-      key={k(item)}
-      title={item.title}
-      remove={() => this.handleRemoveItem(idx)}
-    />
-  ))}
+  {list.map(item => <Row key={k(item)} title={item.title} />)}
 </ul>
 // ...
 ```
@@ -37,7 +31,7 @@ Here is an [demo project][2].
 
 ## Caveats
 
-You should always use an object as a parameter in key-defender, for only objects are unique regardless of their values are equal, so we can tell a difference in a Map.
+You should always use an object as a parameter in key-defender, for only objects are unique regardless of their values are equal or not, so we can tell a difference in a Map.
 
 ```javascript
 'abcd' === 'abcd' // true
