@@ -1,6 +1,6 @@
 {
   "name": "key-defender",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0",
   "main": "./bin/bundle.js",
   "author": {
     "name": "ouyang-chao",
