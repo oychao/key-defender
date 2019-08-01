@@ -1,6 +1,6 @@
 {
   "name": "key-defender",
-  "version": "1.0.0-alpha.3",
+  "version": "1.0.0-alpha.4",
   "main": "./bin/bundle.js",
   "author": {
     "name": "ouyang-chao",
@@ -13,10 +13,12 @@
     "list",
     "key-defender"
   ],
+  "types": "./type.d.ts",
   "description": "Manage keys in React/Vue applications.",
   "files": [
     "LICENSE.md",
     "README.md",
+    "type.d.ts",
     "bin/"
   ],
   "watch": {
