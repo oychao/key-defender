@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import 'mocha-sinon';
 
-import k from '../src/main';
+import { k } from '../src/main';
 
 /* eslint-disable */
 describe('key-defender', () => {
