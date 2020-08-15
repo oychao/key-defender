@@ -3,7 +3,7 @@ const DICT_LEN = DICT.length;
 
 const store = new WeakMap();
 
-export default function (item, keyLen = 10) {
+export default function k(item, keyLen = 10) {
   if (typeof item !== 'object' && typeof item !== 'function') {
     throw new TypeError(`item of list should be an object rather than a ${typeof item}`);
   }
