@@ -22,12 +22,12 @@ import k from 'key-defender';
 
 // ...
 <ul>
-  {list.map(item => <Row key={k(item)} title={item.title} />)}
-</ul>
+  {list.map(item => (
+    <Row key={k(item)} title={item.title} />
+  ))}
+</ul>;
 // ...
 ```
-
-Here is an [demo project][2].
 
 ## Caveats
 
@@ -41,8 +41,8 @@ You should always use an object as a parameter in key-defender, for only objects
 If you are handling a list with basic typed values, decorate it before using key-defender.
 
 ```javascript
-['foo', 'foo', 'bar', 'bar'] // origin list
-['foo', 'foo', 'bar', 'bar'].map(_ => ({ val: _ })) // decorated list
+['foo', 'foo', 'bar', 'bar'][('foo', 'foo', 'bar', 'bar')] // origin list
+  .map(_ => ({ val: _ })); // decorated list
 ```
 
 ## License
@@ -50,4 +50,3 @@ If you are handling a list with basic typed values, decorate it before using key
 [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/996icu/996.ICU/blob/master/LICENSE)
 
 [1]: https://medium.com/@robinpokorny/index-as-a-key-is-an-anti-pattern-e0349aece318
-[2]: https://github.com/oychao/key-defender/tree/master/demo
