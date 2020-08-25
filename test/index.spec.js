@@ -14,11 +14,6 @@ describe('key-defender', () => {
     done();
   });
 
-  it('the length of the string it retured should be configurable', done => {
-    expect(k({}, 15).length).to.equal(15);
-    done();
-  });
-
   it('should only accept an object as its first parameter', done => {
     expect(function () {
       k(undefined);
